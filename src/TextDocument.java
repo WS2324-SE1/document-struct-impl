@@ -1,8 +1,8 @@
 import java.io.UnsupportedEncodingException;
 
 public class TextDocument extends CoreDocument {
-    private String text;
-    private Encoding encoding;
+    private final String text;
+    private final Encoding encoding;
 
     public TextDocument(String text, Encoding encoding) {
         this.text = text;

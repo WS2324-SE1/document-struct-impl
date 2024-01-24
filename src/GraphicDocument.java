@@ -1,5 +1,5 @@
 public class GraphicDocument extends CoreDocument {
-    private String URL;
+    private final String URL;
 
     public GraphicDocument(String URL) {
         this.URL = URL;
@@ -7,5 +7,10 @@ public class GraphicDocument extends CoreDocument {
 
     public int getByteSize() {
         return 1200; // assuming a constant size
+    }
+
+    public String getURL()
+    {
+        return URL;
     }
 }

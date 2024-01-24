@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ComplexDocument implements Document {
-    private List<Document> children = new ArrayList<>();
+    private final List<Document> children = new ArrayList<>();
     private String id;
 
     public void addDocument(Document doc) {
